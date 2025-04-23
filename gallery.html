@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Food Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #fff8f1, #ffe5d9);
+      color: #333;
+      padding: 20px;
+    }
+
+    .gallery-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 50px;
+      color: #e94e1b;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: #fff;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+      transition: 0.4s ease;
+      opacity: 0;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section class="gallery-container">
+    <h1>🍴 Ultimate Food Gallery</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" alt="Fresh Salad and Appetizers">
+        <div class="caption">Fresh Salad & Appetizers</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwaI-FgTkwQ-PdwN_64zKKGJUIi7BI6UdlIg&s" alt="Restaurant Plates">
+        <div class="caption">Restaurant Plates</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVnb3JlCmtRJUTXo3Tj3dl_ZPjq2ScYFE6g&s" alt="Tasty Dish 1">
+        <div class="caption">Tasty Dish</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp7mK6Gj58l9QCM5HA1J6Lfn_nbQ9EYGHPEQ&s" alt="Colorful Flavors">
+        <div class="caption">Colorful Flavors</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://media.cntraveler.com/photos/66668a4b352fb7400e650b24/16:9/w_2560%2Cc_limit/Belly%2520of%2520the%2520beast%2520menu%2520August%25202023%2520-%2520Claire%2520Gunn%2520Photo.jpg" alt="Belly of the Beast">
+        <div class="caption">Belly of the Beast</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://d4t7t8y8xqo0t.cloudfront.net/eazymedia/restaurant%2F696543%2Frestaurant020240717110706.jpg" alt="Signature Dish">
+        <div class="caption">Signature Dish</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXZylLZLdEOnpA7xCFv_tEqFvcThCY70wK7Q&s" alt="Wonderful Dish">
+        <div class="caption">Wonderful Dish</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLjJJYZT7sZgE2gugCEblms8TWaMc-Vww9A&s" alt="Slice of Life">
+        <div class="caption">Slice of Life</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://cdn.pixabay.com/photo/2022/05/22/13/21/healthy-7213383_1280.jpg" alt="Food full of Love">
+        <div class="caption">Food Full of Love</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GznyhguhDLrRzDTn3cBZnPi_NpbGttIpqg&s" alt="Make with Love">
+        <div class="caption">Made with Love</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdVokvqSsvBSn7vkPA_v9dFUUgyaR-9abWg&s" alt="Savouring Every Bite">
+        <div class="caption">Savouring Every Bite</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

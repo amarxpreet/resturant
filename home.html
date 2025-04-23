@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dutch's Breakfast & Lunch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+
+.imge{
+  padding: 2rem;
+}
+.slider-wrapper{
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+  margin-left: 300px;
+  height: 300px;
+}
+
+.slider{
+  display: flex;
+height: 500px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+border-radius: 0.5rem;
+}
+
+    .slider img{
+      flex: 1 0 100%;
+      scroll-snap-align: start;
+    }
+
+    .slider nav{
+      display: flex;
+      column-gap: 1rem;
+      position: absolute;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);  
+      z-index: 1;
+    }
+
+    .slider-nav a{
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.75;
+      transition: opacity ease 250ms;
+    }
+    
+    .slider-nav a:hover{
+      opacity: 1;
+    }
+      
+    .main-content {
+      margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-left: 250px; /* adjust if sidebar width is different */
+  background-color: #fdfdfd;
+}
+
+
+ .gallery h2, .hours h2, .catering {
+  font-size: 22px;
+  display: flex;
+  color: #b51f2b;
+  text-align: center;
+  border-bottom: 2px solid #b51f2b;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #00a88f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hours, .catering {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: white;
+}
+
+.hours p , .catering p{
+  font-size: 16px;
+  color: #333;
+
+}
+
+.menuimg{
+  display: flex;
+  width: 30px;
+}
+.catering{
+  align-items: center;
+  justify-content: center;
+}
+
+    
+    
+      </style>
+</head>
+<body>
+  <header>
+    <p>28 PREBLE STREET ||  ME 04101 || 207.761.2900</p>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>Goldleaf</h1>
+        <p>BREAKFAST & LUNCH</p>
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch</a>
+        <a href="pastries.html">Pastries</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f" onclick="window.open('https://facebook.com', '_blank')"></i>
+        <i class="fab fa-twitter" onclick="window.open('https://twitter.com', '_blank')"></i>
+        <i class="fab fa-instagram" onclick="window.open('https://instagram.com', '_blank')"></i>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="hero-image">
+        <div class="slider-container">
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Image Carousel</title>
+            <link rel="stylesheet" href="styles.css"/>
+          </head>
+          <body>
+          
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+              <title>3-Image Carousel</title>
+              <link rel="stylesheet" href="styles.css"/>
+            </head>
+            <body>
+            
+              <div class="imge">
+                <div class="slider-wrapper">
+                  <div class="slider">
+                    <img  id="slide1"  src="https://www.tastingtable.com/img/gallery/40-absolute-best-restaurants-in-portland/langbaan-phuket-cafe-1685541242.jpg"> 
+                    <img  id="slide2" src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg">
+                    <img id="slide3" src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D">
+                  </div>
+                </div>
+                  <div>
+                    <a class="#slide-1"></a>
+                    <a class="#slide-2"></a>
+                    <a class="#slide-3"></a>
+                  </div>
+                  
+
+                  <div class="main-content">
+                  
+                      <div class="gallery">
+                        <h2>FEAST YOUR EYES</h2>
+                        <div class="gallery-grid">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvC1pGhW7_BRwnGuBguLE99tfA0faYflekCA&s" height="170px" alt="Food 1">
+                          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHx8MHx8fDA%3D" height="170px" alt="Food 2">
+                          <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Food 3">
+                          <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg" height="270px"  alt="Food 4">
+                        </div>
+                        <a href="gallery.html" class="gallery-link">VIEW FULL IMAGE GALLERY »</a>
+                      </div>
+                  
+                      <div class="hours">
+                        <h2>HOURS</h2>
+                        <p><strong>WEDNESDAY-SUNDAY</strong><br>8AM-6PM</p>
+                      </div>
+                      <div  class="catering">
+                        <h2>
+                          <p> Goldleaf's Catering Menu</p>
+                          <a href="catering.html" target="_blank">Catering Menu</a>
+                       
+                        </h2>
+                      </div>
+                    </section>
+                  </div>
+                  
+          
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

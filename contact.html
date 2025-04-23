@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Dutch's</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="contact-page">
+  <header>28 Preble Street |  ME 04101 | 207.761.2900</header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>Goldleaf</h1>
+        <p>BREAKFAST & LUNCH</p>
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch</a>
+        <a href="pastries.html">Pastries</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f" onclick="window.open('https://facebook.com', '_blank')"></i>
+        <i class="fab fa-twitter" onclick="window.open('https://twitter.com', '_blank')"></i>
+        <i class="fab fa-instagram" onclick="window.open('https://instagram.com', '_blank')"></i>
+      </div>
+    </aside>
+
+    <main class="menu-content">
+      <h1 class="contact-title">CONTACT</h1>
+      <div class="underline"></div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name <span>*</span></label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message <span>*</span></label>
+        <textarea id="message" name="message" placeholder="Drop us a line and say hello:" rows="5" required></textarea>
+
+        <label>Rate Your Experience</label>
+        <div class="rating-stars">
+          <i class="fas fa-star" data-value="1"></i>
+          <i class="fas fa-star" data-value="2"></i>
+          <i class="fas fa-star" data-value="3"></i>
+          <i class="fas fa-star" data-value="4"></i>
+          <i class="fas fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="rating" id="rating" value="0">
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div id="thankyou-message" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
+        Thank you for contacting The Gold leaf ! 😊
+      </div>
+    </main>
+  </div>
+  <script src="script.js" defer></script>
+ 
+</body>
+</html>
